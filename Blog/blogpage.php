@@ -78,12 +78,12 @@
 		
 		<div class="blog-posts">
 			<div  id="map-div" >
-				<div><iframe width="100%" height="500" id="gmap_canvas"
-					src="https://maps.google.com/maps?q=Tema%2C%20Community%2017%2C%20Ashaiman%20Lashibi%20Road%2C%20Tema%2C%20Ghana&t=&z=17&ie=UTF8&iwloc=&output=embed"
-					frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                    href="https://www.embedgooglemap.net/text-tools/remove-spaces/"></a></div>
-        
+				<div>
+					<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Tema%2C%20Community%2017%2C%20Ashaiman%20Lashibi%20Road%2C%20Tema%2C%20Ghana&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					<a href="https://www.embedgooglemap.net/text-tools/remove-spaces/"></a>
 				</div>
+        
+			</div>
 		</div>
 		
 		<div id="clear"> </div>
