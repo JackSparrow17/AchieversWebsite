@@ -1,0 +1,265 @@
+/* top */
+
+.top {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "brand" "navbar";
+    background-color: var(--primary);
+    min-height: 25vh;
+}
+
+.top .brand {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    color: var(--light);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.top .navbar {
+    display: flex;
+    align-items: baseline;
+    padding: 0px 20px;
+}
+
+.top .navbar a {
+    color: var(--dark);
+    background-color: var(--light);
+    padding: 18px 20px;
+    transition: 0.3s ease-out;
+}
+
+.top .navbar .active {
+    background-color: #c5e3f6;
+}
+
+.top .navbar a:hover {
+    background-color: var(--secondary);
+    transition: 0.3s ease-out;
+}
+
+.apex .brand {
+    font-size: 1.3rem;
+    color: rgb(160, 160, 160);
+    margin: 30px 0px;
+}
+
+.apex .header {
+    font-size: 2.6rem;
+    margin: 30px 0px;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+
+/* Banner */
+
+.banner .image {
+    min-height: 55vh;
+}
+
+.banner .image .content {
+    width: 50%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+    margin: auto;
+}
+
+.banner .image {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../IMG/cloth.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+.banner .image .content .tab {
+    text-align: center;
+}
+
+.banner .image .content .tab .header {
+    color: var(--light);
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.banner .text {
+    width: 80%;
+    color: rgb(85, 85, 85);
+    line-height: 1.4;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+/* End of banner */
+
+
+/*Agriculture*/
+
+.agriculture {
+    margin: 0px;
+}
+
+.agriculture .left {
+    background-color: var(--primary);
+    padding: 30px;
+}
+
+.agriculture .left .header {
+    color: var(--light);
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin: 0px 0px 20px 0px;
+}
+
+.agriculture .left p {
+    line-height: 1.4;
+    margin: 10px 0px;
+    color: var(--light);
+}
+
+.agriculture .right {
+    min-height: 60vh;
+}
+
+.agriculture .right .header-mini {
+    color: rgb(85, 85, 85);
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.agriculture .right .header {
+    color: var(--dark);
+    margin: 30px auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.agriculture .right ul li {
+    list-style: none;
+    margin: 40px 0px;
+}
+
+.agriculture .left .caption ul li {
+    list-style: none;
+    color: white;
+    margin: 15px 0px;
+}
+
+
+/*End of Agriculture*/
+
+
+/* Footer */
+
+.footer {
+    padding: 30px;
+}
+
+.footer .header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.footer .contact {
+    width: 95%;
+    margin: 40px auto;
+    min-height: 50vh;
+    box-shadow: -1px -6px 25px rgba(206, 206, 206, 0.8);
+    border-radius: 4px;
+    padding: 50px;
+    z-index: 100;
+}
+
+.footer .contact .tab1 .header {
+    font-size: 1.5rem;
+}
+
+.footer .contact .tab1 .street {
+    margin: 20px 0px;
+    color: #797979;
+    line-height: 1.4;
+}
+
+.footer .contact .tab1 .email {
+    margin: 20px 0px;
+    line-height: 1.4;
+}
+
+.footer .content {
+    grid-gap: 50px;
+    margin: 20px 0px;
+    min-height: 20vh;
+}
+
+.footer .content {
+    margin: 20px 0px;
+}
+
+.footer .content .tab2 .header {
+    color: var(--dark);
+    font-size: 1.5rem;
+}
+
+.footer .content .tab2 .links p {
+    margin: 10px 0px;
+}
+
+.footer .content .tab2 .links p a {
+    color: var(--dark);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer .content .tab2 .links p a:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.footer .row {
+    min-height: 20vh;
+}
+
+.footer .row .tab {
+    font-size: 1.5rem;
+}
+
+.footer .row .tab a {
+    color: var(--dark);
+    opacity: 0.7;
+    transition: 0.3s;
+    margin: 0px 30px 0px 0px;
+}
+
+.footer .row .tab a:hover {
+    color: var(--dark);
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.row .tab,
+.row .copyright {
+    display: flex;
+    align-items: center;
+}
+
+.row .copyright {
+    justify-content: right;
+}
+
+.image-banner {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url('../IMG/abtbanner.jpg');
+    background-size: cover;
+}
+
+
+/* End of Footer */

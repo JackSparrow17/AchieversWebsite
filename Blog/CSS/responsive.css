@@ -1,0 +1,32 @@
+@media (max-width: 720px){
+	.user-bar, .blog-posts{
+		float: none;
+		width: 100%;
+		margin: auto;
+	}
+	
+	.user-bar{
+		margin-top: 350px;
+	}
+
+	.blog-posts{
+		margin-top: 550px;
+	}
+
+
+	.preview-image, .preview-block{
+		margin: auto;
+		float: none;
+		border: 1px solid red;
+		text-align: center;
+	}
+	
+	.blog-posts{
+		padding: 0;
+		text-align: center;
+		width: 100%;
+		margin: auto;
+		float: none;
+	}
+	
+}

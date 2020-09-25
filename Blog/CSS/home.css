@@ -1,0 +1,281 @@
+body, html{
+	height: 100%;
+	font-size: 16px;
+	font-family: Roboto Condensed, Tahoma;
+}
+/* New */
+
+.topnav{
+	width: 100%;
+	background-color: white;
+	min-height: 50px;
+	margin: 0px auto;
+	display: flex;
+	align-items: center;
+	font-size: 1.05rem;
+	color: black;
+}
+
+.nav-custom{
+	float: left;
+	color: white;
+}
+.nav-custom ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.nav-custom ul li{
+	display: inline-block;
+	padding: 10px;
+}
+
+.company-adds{
+	margin-top: 0;
+	background-color: #2b2b2b;
+	width: 100%;
+	min-height: 100px;
+}
+
+.page-content{
+	width: 100%;
+	min-height: 500px;
+	margin: 0px auto;	
+}
+
+.user-bar{
+	width: 27%;
+	float: left;
+	min-height: 500px;
+	background-color: white;
+}
+
+.blog-posts{
+	width: 73%;
+	float: left;
+	min-height: 500px;
+	background-color: #E5E5E5;
+	padding: 20px;
+}
+
+.story-image img{
+	width: 100%;
+}
+
+.story-image{
+	padding: 10px;
+	margin: auto;
+	width: 95%;
+}
+
+.story-header{
+	font-weight: bold;
+	font-size: 3.3rem;
+	color: #2b2b2b;
+	font-family: PT Sans Narrow;
+	margin: auto;
+	width: 95%;
+	padding: 10px;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.show-post-date{
+	margin: auto;
+	width: 95%;
+	padding: 10px;
+	color: #C4C4C4;
+}
+
+.show-post-author{
+	margin: auto;
+	width: 95%;
+	padding: 10px;
+	padding-top: 0px;
+	color: #C4C4C4;
+}
+
+.story-text{
+	margin: auto;
+	width: 95%;
+	padding: 10px;
+	font-weight: normal;
+	font-size: 1.3rem;
+}
+
+.social{
+	float: right;
+	/*margin-left: 30%;*/
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.get-social-header{
+	width: 100%;
+	text-align: center;
+	padding: 5%;
+}
+
+.get-social-div{
+	width: 100%;
+	min-height: 240px;
+	padding: 3% 5% 2% 5%;
+	border: 2px solid #F1F1F5;
+	font-size: 1.8rem;
+	border-radius: 4px;
+}
+
+.get-social-icons{
+	width: 100%;
+	text-align: center;
+}
+
+.get-social-icons ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.get-social-icons ul li{
+	display: inline-block;
+}
+
+.get-social-icons ul li a, .get-social-icons ul li a:active, .get-social-icons ul li a:visited{
+	color: grey;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.get-social-icons ul li a:hover{
+	color: black;
+	transition: 0.5s;
+}
+
+.get-social-icons ul li a span{
+	padding: 8px 16px 8px 16px;
+	border-radius: 3px;
+	background-color: #EDECE7;
+}
+
+.newsletter-div{
+	margin-top: 90px;
+}
+
+.text-area-grey{
+	color: #AEADAA;
+	font-size: 1.5rem;
+}
+
+.email-newletter-form{
+	font-size: 1.3rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.email-newletter-form input, button{
+	width: 100%;
+	margin-top: 2%;
+	padding: 2.7% 3.7% 2.7% 3.7%;
+	border: 0;
+}
+
+.email-newletter-form input{
+	background-color: #EDECE7;
+	opacity: 0.7;
+	transition: 0.5s;
+	padding-left: 11%;
+}
+
+.email-newletter-form input:hover{
+	background-color: #EDECE7;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.email-newletter-form button{
+	background-color: cadetblue;
+	color: white;
+	transition: 0.5s;
+}
+
+.email-newletter-form button:hover{
+	background-color: #457475;
+	color: white;
+	transition: 0.5s;
+}
+
+
+.post-ctr{
+	margin: auto;
+	width: 95%;
+	padding: 10px;
+	text-align: left;
+}
+
+.comments{
+	border: 1px solid red;
+	min-height: 50px;
+}
+
+.icons{
+	border-bottom: 1px solid grey;
+	font-size: 1.7rem;
+}
+
+#commentsbtn{
+	padding: 10px;
+	background-color:#EDECE7;
+	color: green;
+	display: inline-block;
+	border-radius: 3px;
+	border: 0;
+	transition: 0.5s;
+	color: grey;
+}
+
+#commentsbtn:hover{
+	transition: 0.5s;
+	color: orange;
+}
+
+.author-name, .header{
+	width: 100%;
+	margin: auto;
+	border: 1px solid red;
+	padding: 10px;
+	
+}
+
+
+.header{
+	font-weight: bold;
+}
+
+.new-comment{
+	width: 40%;
+	border: 1px solid red;
+	min-height: 50px;
+	
+}
+
+.full-name-box{
+	background-image:url('../IMG/ICONS/name-input-icon.png');
+}
+
+.email-box{
+	background-image:url('../IMG/ICONS/email-input-icon.png');
+}
+
+
+.full-name-box, .email-box{
+	background-position:left;
+	background-repeat:no-repeat;
+	background-size: 35px 35px;
+	padding: 10px;
+	padding-left: 60px;
+}

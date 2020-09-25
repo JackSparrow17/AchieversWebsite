@@ -1,0 +1,48 @@
+.blog-posts{
+				float: none;
+				margin: auto;
+				padding: 10px;
+			}
+			
+			.post-preview{
+				width: 80px;
+				margin: auto;
+				
+			}
+			
+			.preview-image, .preview-block{
+				float: left;
+				
+			}
+			
+			.preview-image{
+				text-align: center;
+				width: 225px;
+				height: 225px;
+				transition: 0.4s;
+			}
+			
+			.preview-image:hover{
+				overflow: hidden;
+				transition: 0.4s;
+				border: 15px solid #E3610B;
+			}
+			
+
+			
+			.preview-image img{
+				width: 100%;
+				height: 100%;
+			}
+			
+			.preview-block{
+				margin-left: 20px;
+				width: 70%;
+			}
+			
+			@media (max-width:720px){
+				.blog-posts{
+					margin-top: 650px;
+					padding: 0;
+				}
+			}

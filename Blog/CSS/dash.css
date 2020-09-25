@@ -1,0 +1,294 @@
+body,html{
+				font-size: 16px;
+				font-family: tahoma;
+				height: 100%;
+			}
+			a, a:active, a:visited{
+				text-decoration: none;
+				color: black;
+				transition: 0.4s;
+			}
+			
+			.wrapper{
+				width: 80%;
+				height: 100%;
+				margin: auto;
+				margin-left: 0;
+			}
+			
+			.banner{
+				width: 100%;
+				min-height: 100px;
+				background-color: #F1F1F4;
+				overflow: auto;
+				
+			}
+			
+			.callout{
+				background-color: white;
+				border-bottom: 1px solid grey;
+				
+			}
+			
+			.left-col{
+				width: 24%;
+				min-height:30%;
+				border-right: 1px solid #F1F1F4;
+				float: left;
+			}
+			
+			.blog-title{
+				float: left;
+				min-width: 20%;
+				min-height: 60px;
+				padding: 1%;
+				display: flex;
+				align-items: center;
+				font-size: 1.4rem;
+				font-weight: bold;
+			}
+			
+			.post-call{
+				min-width: 20%;
+				float: left;
+				display: flex;
+				align-items: center;
+				padding: 1%;
+				
+			}
+			
+			.post-link{
+				color: white;
+				padding: 15px 20px 15px 20px;
+				background-color: #F67951;
+				transition: 0.4s;
+				border: none;
+			}
+			
+			.post-call a{
+				color: white;
+			}
+			
+			.user-icon{
+					width: 35px;
+					height: 35px;
+					padding: 5px;
+					border-radius: 30px;
+					background-color: #E1E1E2;
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					background-image: url('../IMG/ICONS/user-icon-green.png');
+					margin-left: 10px;
+			}
+			
+			.post-link:hover{
+				background-color: #DB8D00;
+				transition: 0.4s;
+			}
+			
+			.vertical-nav{
+				width: 100%;
+				min-height: 100px;
+				padding: 20px;
+				font-size: 1.4rem;
+				
+			}
+			
+			.vertical-nav ul{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			
+			.vertical-nav ul li{
+				display: block;
+				padding-left: 50px;
+			}
+			
+			.vertical-nav ul li a:hover, .vertical-nav ul li a:active, .vertical-nav ul li a:focus{
+				transition: 0.4s;
+				color: orange;
+			}
+			
+			
+			.active-nav-item a{
+				color: orange;
+			}
+			
+			.company-logo{
+				width: 10%;
+				display: flex;
+				align-items: center;
+				height: 100px;
+				float: left;
+			}
+			
+			.company-logo img{
+				width: 100%;
+				height: 100%;
+			}
+			
+			.right-col{
+				border: 1px solid red;
+				float: right;
+				width: 72%;
+				margin-left: 2%;
+				min-height: 80%;
+				background-color: #E0E0E2;
+			}
+			
+			
+			#createPost, #comments, #settings{
+				display: none;
+			}
+			
+			.post-panel{
+				margin: auto;
+				border: 1px solid red;
+				padding: 2%;
+				display: flex;
+				align-items: center;
+				background-color: white;
+			}
+			.post-title{
+				width: 60%;
+				padding: 10px;
+			}
+			
+			.post-body{
+				min-width: 90%;
+				margin: auto;
+				min-height: 200px;
+				background-color: white;
+				margin-top: 30px;
+				border: 1px solid red;
+				text-align: center;
+				overflow: auto;
+				background-color: #F67951;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-radius: 10px;
+			}
+			
+			.phpResult{
+				width: 10%;
+				display: flex;
+				align-items: center;
+				height: 100px;
+				float: left;
+				margin-left: 30%;
+				justify-content: center;
+			}
+			
+			#allpost{
+				padding: 40px;
+			}
+			
+			.post-result{
+				margin-top: 80px;
+				width: 90%;
+				margin: auto;
+				background-color: white;
+				border: 7px solid #E0E0E2;
+				border-radius: 20px;
+			}
+			
+			.post-header{
+				width: 100%;
+				padding: 5px;
+				padding-left: 16px;
+				font-weight: bold;
+				margin: auto;
+				font-size: 1.3rem;
+			}
+			
+			.post-date{
+				padding-left: 16px;
+				color: grey;
+			}
+			
+			.post-one, .post-two{
+				width: 90%;
+				border: 1px solid red;
+				padding: 5px 0px 16px 16px; 
+				word-wrap: break-word;
+				font-size: 1.09rem;
+				
+			}
+			
+			.post-one p, .post-two p{
+				line-height: 24px;
+				word-spacing: 0.5px;
+			}
+		
+			
+			
+			
+			
+			
+			
+			
+			/* Smaller Screens */
+			@media (max-width: 720px){
+				.left-col{
+					width: 100%;
+					float: none;
+					border: 1px solid grey;
+					
+				}
+				
+				.banner{
+					overflow: auto;
+				}
+				
+				.phpResult{
+					margin: 0;
+					margin: auto;
+					width: 100%;
+				}
+				
+				.blog-title{
+					width: 90%;
+					float: none;
+					margin: auto:
+					text-align: center;
+					
+				}
+				
+				.wrapper{
+					width: 100%;
+					border: 1px solid red;
+					margin: auto;
+					
+				}
+				
+				.post-call{
+					float: none;
+					width: 97%;
+					margin: auto;
+				}
+				
+				.company-logo{
+					width: 100%;
+					height: 190px;
+				}
+				
+				.vertical-nav ul li{
+					padding-left: 0px;
+					padding: 16px;
+					border-bottom: 1px solid grey;
+					text-align: center;
+				}
+				
+				.vertical-nav{
+					padding: 0;
+				}
+				
+				.right-col{
+					float: none;
+					width: 100%;
+					margin: 0;
+					margin: auto;
+					padding: 10px;
+				}
+			}

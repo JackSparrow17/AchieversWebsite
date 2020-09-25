@@ -1,0 +1,14 @@
+.preview-image, .preview-block{
+		margin: auto;
+		float: none;
+		border: 1px solid red;
+		text-align: center;
+	}
+	
+	.blog-posts{
+		padding: 0;
+		text-align: center;
+		width: 100%;
+		margin: auto;
+		float: none;
+	}
