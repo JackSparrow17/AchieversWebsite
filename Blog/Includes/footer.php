@@ -9,9 +9,9 @@
 
       <!-- Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">IGNIS ENGINEERING & CONSTRUCTION </h6>
-        <p>IGNIS Engineering and Construction is a Ghanaian owned company that introduces innovative, efficient and cost-effective building technologies into the Ghanaian space.
-IGNIS has come up with innovative housing designs that are eco-friendly and cover lest cost in its build..</p>
+        <h6 class="text-uppercase mb-4 font-weight-bold">ACHIEVERS INVESTMENT AND MANAGEMENT LIMITED </h6>
+        <p>Achievers Investment and Management LTD is a Ghanaian owned industrial company that aims at revolutionizing the agricultural, impex industries of the country. With a combined staff experience of more than 200 years we aim to become Africa’s foremost authority
+          on strategic agricultural investments, standardised industrial practice and innovative export and import technologies.</p>
       </div>
       <!-- Grid column -->
 
@@ -19,15 +19,18 @@ IGNIS has come up with innovative housing designs that are eco-friendly and cove
 
       <!-- Grid column -->
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
+        <h6 class="text-uppercase mb-4 font-weight-bold">SERVICES</h6>
         <p>
-          <a href="#!">Civil Construction</a>
+          <a href="#!">Agriculture</a>
+        </p>
+		<p>
+          <a href="#!">Import</a>
         </p>
         <p>
-          <a href="#!">Renovation</a>
+          <a href="#!">Export</a>
         </p>
         <p>
-          <a href="#!">Interior & Exterior Designs</a>
+          <a href="#!">Training</a>
         </p>
 
       </div>
@@ -64,7 +67,7 @@ IGNIS has come up with innovative housing designs that are eco-friendly and cove
 		</p>
 
         <p>
-          <i class="fas fa-envelope mr-3"></i> Email: info@ignisconstructions.com</p>
+          <i class="fas fa-envelope mr-3"></i> Email: info@achieversinvestmentgh.com</p>
         <p>
           <i class="fas fa-phone mr-3"></i> +233 24 224 4518</p>
         <p>
@@ -83,9 +86,9 @@ IGNIS has come up with innovative housing designs that are eco-friendly and cove
       <div class="col-md-7 col-lg-8">
 
         <!--Copyright-->
-        <p class="text-center text-md-left">© 2020 Copyright:
+        <p class="text-center text-md-left">© Copyright 2020
           <a href="https://ignisconstructions.com/">
-            <strong> ignisconstructions.com</strong>
+            <strong> achievers.com</strong>
           </a>
         </p>
 

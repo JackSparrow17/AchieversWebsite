@@ -15,49 +15,23 @@
 <!-- Google fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Tangerine|Baloo+Bhaina+2">	
 
-<!-- Externam CSS -->
+<!-- External CSS -->
 <link rel="stylesheet" href="CSS/dashboard.css" type="text/css">	
+<link rel="stylesheet" href="CSS/new.css" type="text/css">	
 
 	</head>
 	
 	<body>
-		<div class="container-custom">
-<!-- Banner -->
-			<div class="jumbotron banner" style="max-height: 200px;"> 
-				<div class="row">
-					<div class="col-sm-1">
-						<img src="IMG/logo.png" class="img-responsive" />
-					</div>
-				</div>
-			</div>
-<!-- End of Banner -->
-
-<!-- Callout -->
-			<div class="jumbotron banner callout">
-				<div class="row">
-					<div class="col-sm-3 calloutInner2" style="font-weight: bold; font-size: 1.2rem;">
-						IGNIS Blog Dashboard
-					</div>
-					
-					<div class="col-sm-4 calloutInner2">
-						<button class="newPostBtn" id="newPostBtn" type="" id="newPostBtn"> New Post </button>
-						<div class="user-icon"> </div> <div class="user-id"> Admin </div>
-						
-						<div id="clear"> </div>
-					</div>
-				</div>
-			</div>
-<!-- End of Callout -->	
-
-
-
+	<div class="wrapper">
+		<div class="banner">
+			Blog Dashboard
+		</div>
 
 <!-- Panels -->
-		<div class="jumbotron">
-			<div class="row">
+		<div class="content">
 			
 			<!-- Left Col -->
-				<div class="col-sm-2 left-col">
+				<div class="left">
 					<div class="vertical-nav">
 					<ul>
 						<li id="createPostBtn" class="active-nav-item"> <font color="black">Create post </font></li>
@@ -72,7 +46,7 @@
 			<!-- Right Col -->
 			
 			<!-- Create post-->	
-				<div class="col-sm-9  right-col" id="createPost">
+				<div class="right" id="createPost">
 				
 					<form method="POST" action="Process/postStory.php" enctype="multipart/form-data">
 						<div class="post-panel">
@@ -93,12 +67,12 @@
 					
 						<div class="post-body" style="margin-top: 60px;">
 							<font color="Black"><h3> Story #1 </h3></font>
-							<textarea id="storyOne" name="postOne" placeholder="Story #1" style="width: 95%; height: 70%; margin: auto; min-height: 180px; padding: 10px; font-size: 1.3rem;" maxlength="1000" required> </textarea>
+							<textarea id="storyOne" name="postOne" placeholder="Story #1" style="width: 95%; height: 70%; margin: auto; min-height: 100px; padding: 10px; font-size: 1.3rem;" maxlength="1000" required> </textarea>
 						</div>
 					
 						<div class="post-body">
 							<font color="Black"><h3> Story #2 </h3></font>
-							<textarea name="postTwo" placeholder="Story #2; optional" style="width: 95%; height: 70%; margin: auto; min-height: 180px; padding: 10px; font-size: 1.3rem;" maxlength="2000"> </textarea>
+							<textarea name="postTwo" placeholder="Story #2; optional" style="width: 95%; height: 70%; margin: auto; min-height: 100px; padding: 10px; font-size: 1.3rem;" maxlength="2000"> </textarea>
 						</div>
 					</form>
 						
