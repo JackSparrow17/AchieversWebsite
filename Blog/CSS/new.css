@@ -1,0 +1,22 @@
+.wrapper{
+	 width: 100%;
+	 margin: 10px auto;
+ }
+ 
+.banner{
+	width: 100%;
+	min-height: 10vh;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.content{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.right{
+	padding: 20px;
+}
