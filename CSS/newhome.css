@@ -1,0 +1,259 @@
+:root {
+    /* Colours */
+    --primary: #364f6b;
+    --secondary: ;
+    --light: #f0f0f0;
+    --dark: #2b2b2b;
+    --text1: #b31e6f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+/* Presets */
+
+.full-width {
+    width: 100%;
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.background-presets {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.line {
+    width: 70px;
+    height: 2px;
+    background-color: var(--text1);
+    margin: auto;
+}
+
+
+/*End of presets*/
+
+.callout {
+    min-height: 10vh;
+    background-color: var(--light);
+    display: grid;
+    grid-template-columns: auto 200px 150px;
+}
+
+.callout .brand,
+.callout .icons {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.callout .icons a {
+    color: var(--dark);
+    font-size: 1.3rem;
+    margin: 0px 10px;
+    transition: 0.3s;
+}
+
+.callout .icons a:hover {
+    color: var(--text1);
+    transition: 0.3s;
+}
+
+.callout .button a {
+    background-color: var(--primary);
+    color: white;
+    padding: 25px 20px;
+}
+
+.callout .brand .content {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--text1);
+}
+
+.banner {
+    min-height: 30vh;
+}
+
+
+/* Showcase */
+
+.showcase {
+    border: 1px solid black;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../IMG/us.jpg');
+}
+
+.showcase .navigation {
+    width: 80%;
+    margin: -30px auto;
+    background-color: var(--primary);
+    z-index: 100;
+}
+
+.showcase .navigation ul {
+    display: flex;
+}
+
+.showcase .navigation ul li {
+    list-style: none;
+    padding: 20px 30px;
+    transition: 0.4s;
+}
+
+.showcase .navigation ul li:hover {
+    background-color: var(--text1);
+    transition: 0.2s;
+}
+
+.showcase .navigation a {
+    color: white;
+}
+
+.active {
+    background-color: var(--text1);
+    border-right: 1px solid var(--primary);
+}
+
+.action {
+    height: 80vh;
+    padding: 0px 100px;
+}
+
+.action .header {
+    font-size: 2.5rem;
+    color: white;
+    line-height: 1.6;
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.action .button-group {
+    margin: 20px 0px;
+}
+
+.action .button-group a {
+    padding: 15px 25px;
+    font-size: 0.9rem;
+    transition: 0.4s;
+}
+
+.action .button-group a:hover {
+    padding: 17px 27px;
+    transition: 0.4s;
+}
+
+.action .button-group .learn-more {
+    background-color: white;
+    color: var(--dark);
+}
+
+.action .button-group .contact-us {
+    background-color: var(--text1);
+    color: white;
+}
+
+
+/* End of Showcase */
+
+
+/* About */
+
+.about .header {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about .text {
+    width: 70%;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.about .cards {
+    width: 80%;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about .cards .card {
+    min-height: 50vh;
+    background-color: #bdbdbd;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.about .cards .card2 {
+    background: linear-gradient(rgba(179, 30, 111, 0.95), rgba(179, 30, 111, 0.95)), url('../IMG/flower.jpg');
+}
+
+.about .cards .card .content {
+    margin: auto;
+}
+
+.about .cards .card .content .icon {
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    margin: auto;
+}
+
+.about .cards .card .content .icon i {
+    font-size: 2rem;
+}
+
+.about .cards .card .content .header {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.about .cards .card .content .caption {
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+.about .cards .card2 {
+    color: white;
+}
+
+.about .cards .card2 .icon {
+    border: 2px solid white;
+}
+
+
+/* End of About */
