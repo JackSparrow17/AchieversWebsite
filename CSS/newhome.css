@@ -59,8 +59,18 @@ a:visited {
     display: grid;
 }
 
-.grid-default {
+.grid-preset {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.header-preset {
+    font-size: 2rem;
+    color: black;
+    line-height: 1.6;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    text-transform: uppercase;
 }
 
 
@@ -293,7 +303,6 @@ a:visited {
 }
 
 .industries .tab {
-    border: 1px solid white;
     min-height: 30vh;
     display: flex;
     align-items: center;
@@ -322,5 +331,70 @@ a:visited {
     text-align: center;
 }
 
+.services {
+    padding: 20px;
+}
+
+.services .header {
+    font-size: 2rem;
+    margin: 30px auto;
+    text-align: center;
+    color: black;
+}
+
+.services .tab {
+    margin: 10px;
+}
+
+.services .content .tab .icon {
+    background-color: var(--secondary);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+}
+
+.services .content .tab .caption .header {
+    color: rgb(16, 107, 182);
+    font-size: 1.2rem;
+    margin: 3px 0px;
+    text-align: left;
+}
+
 
 /* End of Industries */
+
+
+/* Staff */
+
+.staff {
+    background-color: #bdbdbd;
+    padding: 20px;
+}
+
+.staff .content {
+    width: 80%;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.staff .content .tab {
+    min-height: 40vh;
+    margin: 5px;
+    background-color: white;
+}
+
+.staff .content .tab .image {
+    height: 30vh;
+}
+
+.staff .content .tab .badge {
+    height: 10vh;
+    background-color: var(--secondary);
+    color: white;
+}
+
+
+/* End of Staff */
