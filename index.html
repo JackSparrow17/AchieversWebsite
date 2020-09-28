@@ -17,10 +17,35 @@
     <!--Wrapper-->
     <div class="wrapper">
         <!--Callout-->
-        <div class="callout">
+        <div class="callout callout-small">
             <div class="brand">
                 <div class="content" style="text-align: center;">
-                    Welcome to Achievers
+                    Achievers
+                </div>
+            </div>
+
+            <div class="icons">
+                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="hamburger-container flex flex-center">
+                <div class="hamburger" id="hamburger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+
+                <div class="hamburger" id="hamburgeralt">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <!--End of callout-->
+        <!--Callout-->
+        <div class="callout callout-large">
+            <div class="brand">
+                <div class="content" style="text-align: center;">
+                    Achievers
                 </div>
             </div>
 
@@ -42,19 +67,19 @@
 
         <div class="showcase full-width background-presets">
             <div class="navigation">
-                <ul>
+                <ul id="links">
                     <li class="active"><a href="#" target="_blank">Home</a></li>
                     <li><a href="about.html" target="_blank">About</a></li>
                     <li><a href="services.html" target="_blank">Services</a></li>
                     <li><a href="Blog/blogpage.php" target="_blank">Blog</a></li>
-                    <li><a href="#contact" target="_blank">Contact Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
 
             <div class="action flex full-width">
                 <div class="header">
-                    <p>WE ACHIEVE WE </p>
-                    <p>PROVIDE BUSINESS CONSULTATION</p>
+                    <p>WE ACHIEVE</p>
+                    <p>WE PROVIDE BUSINESS CONSULTATION</p>
                     <div class="button-group">
                         <a class="learn-more" href="about.html" target="_blank">Learn more</a> <a href="#contact" target="_blank" class="contact-us">Contact Us</a>
                     </div>
@@ -83,7 +108,7 @@
                         </div>
 
                         <div class="header">
-                            Business with Focus on Leadership
+                            MISSION
                         </div>
 
                         <div class="caption">
@@ -99,7 +124,7 @@
                         </div>
 
                         <div class="header">
-                            Global Consumer Insights for Business
+                            VISION
                         </div>
 
                         <div class="caption">
@@ -115,7 +140,7 @@
                         </div>
 
                         <div class="header">
-                            Segment of Focused Investors
+                            OBJECTIVES
                         </div>
 
                         <div class="caption">
@@ -326,7 +351,9 @@
             <div class="content grid grid-preset">
                 <div class="tab tab1">
                     <div class="image full-width">
-                        Image
+                        <div class="handle full-width">
+
+                        </div>
                     </div>
 
                     <div class="badge full-width flex flex-center">
@@ -484,6 +511,42 @@
         <!--End of callout-->
     </div>
     <!--End of wrapper-->
+
+    <script>
+        //Menu
+        var menuOpen = document.getElementById('hamburger');
+        var menuClose = document.getElementById('hamburgeralt');
+        //Hamburger button
+        var menu = document.getElementById('links');
+
+        //Show menu function
+        function openMenu() {
+            for (i = 0; i < 2; i++) {
+                menu.style.transform = "translateX(" + i + "%)";
+                menu.style.transition = "transform 0.5s ease-out"
+            }
+
+            menuOpen.style.display = "none";
+            menuClose.style.display = "block";
+        }
+        //Click to Open menu
+        menuOpen.addEventListener("click", openMenu);
+
+        //Close menu function
+        function closeMenu() {
+            for (i = 0; i < 101; i++) {
+                menu.style.transform = "translateX(" + i + "%)";
+                menu.style.transition = "transform 0.5s ease-out";
+            }
+
+            menuOpen.style.display = "block";
+            menuClose.style.display = "none";
+
+        }
+        //Click to show menu*/
+        menuOpen.addEventListener("click", openMenu);
+        menuClose.addEventListener("click", closeMenu);
+    </script>
 </body>
 
 </html>
