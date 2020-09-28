@@ -1,7 +1,7 @@
 :root {
     /* Colours */
     --secondary: #2cb978;
-    --primary: #83e85a;
+    --primary: #ffd615;
     --light: #f0f0f0;
     --dark: #2b2b2b;
 }
@@ -78,7 +78,7 @@ a:visited {
 
 .callout {
     min-height: 10vh;
-    background-color: var(--secondary);
+    background-color: var(--dark);
     display: grid;
     grid-template-columns: auto 200px 150px;
 }
@@ -92,10 +92,11 @@ a:visited {
     padding: 10px 30px;
     display: flex;
     align-items: center;
+    color: var(--light);
 }
 
 .callout .icons a {
-    color: var(--dark);
+    color: var(--light);
     font-size: 1.3rem;
     margin: 0px 10px;
     transition: 0.3s;
@@ -115,7 +116,7 @@ a:visited {
 .callout .brand .content {
     font-weight: bold;
     font-size: 1.2rem;
-    color: var(--secondary);
+    color: var(--light);
 }
 
 .hamburger-container {
@@ -127,7 +128,7 @@ a:visited {
 }
 
 .hamburger i {
-    color: var(--dark);
+    color: var(--light);
     font-size: 2rem;
 }
 
@@ -145,8 +146,9 @@ a:visited {
 .showcase .navigation {
     width: 80%;
     margin: 0px auto;
-    background-color: var(--primary);
+    background-color: var(--dark);
     z-index: 100;
+    color: var(--light);
 }
 
 .showcase .navigation ul {
@@ -165,12 +167,12 @@ a:visited {
 }
 
 .showcase .navigation a {
-    color: var(--dark);
+    color: var(--light);
 }
 
 .active {
-    background-color: var(--secondary);
-    border-right: 1px solid var(--primary);
+    background-color: #ffd615;
+    color: var(--dark);
 }
 
 .action {
@@ -544,16 +546,73 @@ did:hover div {
 }
 
 @media (max-width: 570px) {
+    .line {
+        background-color: blue;
+        margin: 10px;
+    }
+    /* Industries*/
+    .industries {
+        background-color: white;
+        padding: 10px 0px;
+        color: var(--dark);
+    }
+    .industries .header {
+        font-size: 2rem;
+        margin: 30px auto;
+        text-align: center;
+    }
+    .industries .content {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .industries .tab {
+        min-height: 5vh;
+        display: block;
+        align-items: left;
+        padding: 10px;
+    }
+    .industries .tab .icon {
+        display: none;
+    }
+    .industries .tab .header {
+        margin: 10px 0px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .industries .tab .caption {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    .industries .line {
+        display: none;
+    }
     /*About */
+    .about {
+        padding: 40px 0px;
+    }
     .about .cards {
         width: 100%;
         margin: 0px auto;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+    .about .cards .card {
+        border-radius: 20px;
+        margin: 20px;
+    }
+    .about .header {
+        margin: 10px;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    .about .text {
+        width: 100%;
+        text-align: left;
+        margin: 10px;
+    }
     /*End of about*/
     /*Stadd*/
     .staff {
-        background-color: #e0e0e0;
+        background-color: white;
         padding: 10px 0px 10px 0px;
     }
     .staff .content {
@@ -562,10 +621,16 @@ did:hover div {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
     .staff .content .tab {
-        width: 100%;
-        min-height: 40vh;
-        margin: 0px auto;
+        width: 90%;
+        min-height: 20vh;
         background-color: white;
+        border-radius: 20px;
+        margin: 20px auto;
+        border: 1px solid black;
+        overflow: hidden;
+    }
+    .staff .line {
+        display: none;
     }
     /*End of staff*/
     /*Showcase*/
