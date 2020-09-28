@@ -567,6 +567,7 @@ did:hover div {
     .showcase {
         margin-top: 10vh;
         border-top: 0;
+        min-height: 40vh;
     }
     .line {
         background-color: blue;
