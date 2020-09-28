@@ -594,10 +594,11 @@ did:hover div {
         width: 60%;
         position: absolute;
         top: 10vh;
-        right: 0;
+        left: 0;
         background-color: var(--dark);
         opacity: 0.9;
-        transform: translateX(100%);
+        transform: translateX(-100%);
+        position: fixed;
     }
     .showcase .navigation ul li {
         padding: 25px 30px;
@@ -608,7 +609,9 @@ did:hover div {
     /* Callout */
     .callout {
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-        grid-gap: 70px;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
     .callout-large {
         display: none;
@@ -616,9 +619,16 @@ did:hover div {
     .callout-small {
         display: grid;
     }
+    .callout .icons {
+        padding: 0px 10px;
+    }
+    .callout .brand {
+        padding: 0px 10px;
+    }
     .hamburger-container {
         display: flex;
         justify-content: right;
+        padding: 0px 10px;
     }
     #hamburgeralt {
         display: none;

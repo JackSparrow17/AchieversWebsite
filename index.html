@@ -18,6 +18,16 @@
     <div class="wrapper">
         <!--Callout-->
         <div class="callout callout-small">
+            <div class="hamburger-container flex flex-center">
+                <div class="hamburger" id="hamburger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+
+                <div class="hamburger" id="hamburgeralt">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+
             <div class="brand">
                 <div class="content" style="text-align: center;">
                     Achievers
@@ -30,15 +40,6 @@
                 <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
             </div>
 
-            <div class="hamburger-container flex flex-center">
-                <div class="hamburger" id="hamburger">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
-
-                <div class="hamburger" id="hamburgeralt">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                </div>
-            </div>
         </div>
         <!--End of callout-->
         <!--Callout-->
@@ -491,7 +492,7 @@
         <!--End of footer-->
 
         <!--Callout-->
-        <div class="callout" style="color: white; font-size: 0.9rem; background-color: var(--primary); min-height; 7vh;">
+        <div class="callout" style="position: relative; color: white; font-size: 0.9rem; background-color: var(--primary); min-height; 7vh;">
             <div class="brand">
                 <div class="content" style="text-align: center; font-size: 0.9rem; font-weight: normal;">
                     <font color="white">&copy; Copyright 2020</font>
@@ -521,7 +522,7 @@
 
         //Show menu function
         function openMenu() {
-            for (i = 0; i < 2; i++) {
+            for (i = 0; i < 1; i++) {
                 menu.style.transform = "translateX(" + i + "%)";
                 menu.style.transition = "transform 0.5s ease-out"
             }
@@ -534,7 +535,7 @@
 
         //Close menu function
         function closeMenu() {
-            for (i = 0; i < 101; i++) {
+            for (i = 0; i > -101; i--) {
                 menu.style.transform = "translateX(" + i + "%)";
                 menu.style.transition = "transform 0.5s ease-out";
             }
