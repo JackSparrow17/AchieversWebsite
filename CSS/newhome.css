@@ -111,15 +111,16 @@ a:visited {
 }
 
 .callout .button a {
-    background-color: var(--primary);
+    background-color: var(--gold);
     color: var(--dark);
     padding: 25px 20px;
     transition: 0.3s ease-in;
+    font-weight: bold;
 }
 
 .callout .button :hover {
     transition: 0.4s;
-    background-color: var(--gold);
+    background-color: var(--primary);
 }
 
 .callout .brand .content {
@@ -149,12 +150,12 @@ a:visited {
 /* Showcase */
 
 .showcase {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../IMG/us.jpg');
-    border-top: 5px solid var(--primary);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('../IMG/sen.jpg');
+    border-top: 5px solid var(--gold);
 }
 
 .showcase .navigation {
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
     background-color: var(--dark);
     z-index: 100;
@@ -181,7 +182,7 @@ a:visited {
 }
 
 .active {
-    background-color: var(--primary);
+    background-color: var(--gold);
     color: var(--dark);
 }
 
@@ -216,11 +217,13 @@ a:visited {
 .action .button-group .learn-more {
     background-color: white;
     color: var(--dark);
+    font-weight: bold;
 }
 
 .action .button-group .contact-us {
-    background-color: var(--primary);
+    background-color: var(--gold);
     color: var(--dark);
+    font-weight: bold;
 }
 
 
@@ -561,6 +564,10 @@ did:hover div {
 }
 
 @media (max-width: 570px) {
+    .showcase {
+        margin-top: 10vh;
+        border-top: 0;
+    }
     .line {
         background-color: blue;
         margin: 10px;
@@ -671,14 +678,14 @@ did:hover div {
         top: 10vh;
         left: 0;
         background-color: var(--dark);
-        opacity: 0.9;
+        opacity: 0.95;
         transform: translateX(-100%);
         position: fixed;
+        min-height: 90vh;
     }
     .showcase .navigation ul li {
         padding: 25px 30px;
         text-align: center;
-        border-top: 1px solid var(--gold);
     }
     /*End of showcase */
     /* Callout */
@@ -718,6 +725,9 @@ did:hover div {
     input,
     a {
         border-radius: 4px;
+    }
+    .active {
+        background-color: var(--light);
     }
 }
 
