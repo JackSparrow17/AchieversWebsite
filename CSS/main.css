@@ -38,6 +38,10 @@
     justify-content: center;
 }
 
+.flex-streched {
+    justify-content: space-around;
+}
+
 
 /* End of flex-box */
 

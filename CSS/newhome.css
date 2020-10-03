@@ -255,7 +255,7 @@ a:visited {
 .about .cards .card {
     min-height: 50vh;
     background-color: #bdbdbd;
-    display: flex;
+    display: block;
     align-items: center;
     padding: 20px;
     color: var(--dark);
@@ -603,11 +603,11 @@ did:hover div {
     .industries .tab .header {
         margin: 10px 0px;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
     }
     .industries .tab .caption {
         font-size: 1.1rem;
-        text-align: left;
+        text-align: center;
     }
     .industries .line {
         display: none;
@@ -623,6 +623,7 @@ did:hover div {
     }
     .about .cards .card {
         border-radius: 20px;
+        display: flex;
         margin: 20px;
         box-shadow: var(--shadow);
     }
